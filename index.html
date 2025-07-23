@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samuel Tutu Sasu-Yiadom | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/Logo.svg" type="image/x-icon">
+  <meta name="description" content="Portfolio of Samuel Tutu Sasu-Yiadom, a Product Designer specializing in user experiences that resonate and make a difference.">
+  <meta name="keywords" content="Samuel Tutu, Product Designer, UX Design, UI Design, Web Design, Portfolio">
+  <meta name="author" content="Samuel Tutu Sasu-Yiadom">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="#" class="logo"><img src="images/Logo.svg"></a>
+      <button class="nav-toggle">
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+        </div>
+      </button>
+      <nav class="nav">
+        <ul>
+          <li><a class="links nav-links" onclick="closeMenu()" href="#projects">Projects</a></li>
+          <li><a class="links nav-links" onclick="closeMenu()" href="#about">About me</a></li>
+          <li><a class="links cta" onclick="closeMenu()" href="#contact">Contact me</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<p class="container flex desktop-notice fs-500 text-purple">Desktop mode in progress. Kindly switch to mobile</p>
+  <section class="section-animate hero bg-very-dark">
+    <div class="container">
+      <div class="hero-text flex">
+        
+        <!-- <img src="images/hero-image.png" alt="Samuel Tutu" class="hero-image" /> -->
+        <h1 class="ff-serif-heading fs-700 text-purple">Hi! 👋🏾 Samuel Tutu<br>Sasu-Yiadom here</h1>
+        <p class="fs-300">Product Designer molding simple, user experiences that truly resonate and make real difference.</p>
+      </div>
+      <div class="available-socials flex">
+        <div class="flex available">
+          <div class="available-circle"></div>
+          <p class="available-text fs-400" style="font-weight: 400;">Available for work</p>
+        </div>
+        <div class="social-icons flex">
+          <a class="social-icons--links" href="https://twitter.com/_kwakututu_" target="_blank"><img src="images/x.svg" alt="X icon"></a>
+          <a class="social-icons--links" href="https://www.instagram.com/ux.kwaku/" target="_blank"><img src="images/ig.svg" alt="Instagram icon"></a>
+          <a class="social-icons--links" href="https://www.tiktok.com/@ux.kwaku/" target="_blank"><img src="images/tiktok.svg" alt="TikTok icon"></a>
+          <a class="social-icons--links" href="https://www.linkedin.com/in/samuel-sasu-yiadom-18346ba2/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn icon"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section-animate projects bg-dark">
+    <div class="container flex section-content">
+      <h2 class="section-heading ff-serif-heading fs-600">Projects</h2>
+      <div class="project-case-study flex">
+        <div class="project-image-container"><img src="images/case-study.png" alt="Project Image" class="project-img" /></div>
+        <h3 class="ff-serif-heading fs-500 text-white">Therapy Management App - Theraman</h3>
+        <p class="text-purple fs-400">Case Study</p>
+        <p style="margin-bottom: 0.75rem;">This is the shuttle app for OYA! Ghana. The app helps users to book commercial shuttles with ease...</p>
+        <button class="btn-cta fs-400">View project</button>
+      </div>
+      <div>
+        <h3 class="ff-serif-heading fs-500 text-white">More Designs</h3>
+        <p class="text-purple fs-400" style="margin-bottom: 0.75rem;">A visual archive of my design journey—products crafted with purpose</p>
+        <div class="design-archive"></div>
+          <div class="project-image-container"><img src="images/placeholder2.png" alt="Design sample"></div>
+          <div class="project-image-container"><img src="images/placeholder3.png" alt="Design sample"></div>
+          <div class="project-image-container"><img src="images/placeholder4.png" alt="Design sample"></div>
+        </div>
+        <button class="btn-cta btn-cta--two fs-400">View all</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section-animate about bg-very-dark">
+    <div class="container flex section-content">
+      <h2 class="section-heading ff-serif-heading fs-600">About me</h2>
+      <div class="flex about-content--wrapper">
+        <div class="flex about-content--wrapper--inner">
+          <div class="about-img"><img src="images/about-img.png" alt="About image"/></div>
+      
+          <div class=" flex about-content--container">
+            <div class="about-content">
+              <h3 class="ff-serif-heading fs-500 text-purple">Designing Clarity. Inspiring Impact.</h3>
+              <p class="mission">I believe that simplicity 
+and functionality are pillars that seamlessly fuse aesthetics with usability, eventually bridging the gap between users and digital products.</p>
+            </div>
+            <div class="tools-section">
+              <h3 class="ff-serif-heading fs-500 text-purple">Tools I Use</h3>
+              <div class="tools fs-200 flex">
+                <span><img src="images/figma.svg" alt="figma icon">Figma</span><span><img src="images/ai.svg" alt="illustrator icon">Illustrator</span><span><img src="images/ps.svg" alt="Photoshop icon">Photoshop</span><span><img src="images/html.svg" alt="html icon">HTML5</span><span><img src="images/css.svg" alt="css icon">CSS3</span><span><img src="images/js.svg" alt="JavaScript icon">JavaScript</span><span><img src="images/slack.svg" alt="Slack icon">Slack</span><span><img src="images/notion.svg" alt="Notion icon">Notion</span>
+              </div>
+            </div>
+            <div class="skills-section">
+              <h3 class="ff-serif-heading fs-500 text-purple">Skills</h3>
+              <div class="skills fs-300 flex">
+                <span>UX Design</span><span>UI Design</span><span>Web Design</span><span>Interaction Design</span>
+                <span>Responsive Design</span><span>Wireframing</span><span>Design System</span><span>Prototyping</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="btn-cta--two" href="https://drive.google.com/file/d/17osPvUbywtXcQzQcw1XC9R7UTteVRKcq/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+          <button class="btn-cta btn-cta--two fs-400">View my CV</button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact" class="section-animate contact">
+    <div class="container flex section-content">
+      <div class=" flex footer-wrapper">
+        <div class="flex footer-text">
+          <h3 class="ff-serif-heading fs-700 text-purple">Have an idea?</h3>
+          <h3 class="ff-serif-heading fs-700 text-white">Let's work together</h3>
+        </div>
+        <div>
+          <p class="flex"><img src="images/Email icon.svg" alt="email"> tutuyiadom93@gmail.com</p>
+          <div class="social-icons flex">
+            <a class="social-icons--links" href="https://twitter.com/_kwakututu_" target="_blank"><img src="images/x.svg" alt="X icon"></a>
+          <a class="social-icons--links" href="https://www.instagram.com/ux.kwaku/" target="_blank"><img src="images/ig.svg" alt="Instagram icon"></a>
+          <a class="social-icons--links" href="https://www.tiktok.com/@ux.kwaku/" target="_blank"><img src="images/tiktok.svg" alt="TikTok icon"></a>
+          <a class="social-icons--links" href="https://www.linkedin.com/in/samuel-sasu-yiadom-18346ba2/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn icon"></a>
+          </div>
+        </div>
+        <a class="btn-cta--two" href="mailto:tutuyiadom93@gmail.com" style="text-decoration: none;">
+          <button class="btn-cta shoot-me fs-400">
+            Shoot me an email <img src="images/Email button icon.svg"/>
+          </button>
+        </a>
+      </div>
+      <p class="copyright fs-200">&copy; 2025 Samuel Tutu Sasu-Yiadom. All rights reserved.</p>
+      <p class=" footer-bluff ff-serif-heading fs-700 ">Designing Clarity. Inspiring Impact.</p>
+    </div>
+    
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
