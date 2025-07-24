@@ -349,7 +349,7 @@ margin-top: var(--flow-space, 2rem);
     border-bottom: 1px solid hsl(var(--clr-white), 0.1);
 
 }
-.project-image-container, .about-img{
+.project-image-container, .about-img, .more-designs{
     height: 24rem;
     background-color: hsl(140, 36%, 95%);
     border-radius: 2.5rem;
@@ -359,12 +359,16 @@ margin-top: var(--flow-space, 2rem);
     overflow: hidden;
     margin-bottom: 1rem;
 }
-.project-image-container img {
+.more-designs{
+    height: auto;
+}
+.project-image-container img, .more-designs img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
 }
+
 .btn-cta{
     display: inline-block;
     align-self: flex-start;
@@ -385,9 +389,12 @@ margin-top: var(--flow-space, 2rem);
 .btn-cta--two{
     align-self: center;
 }
+.project-wrapper{
+    display: grid;
+    gap: 1rem;
+}
 .design-archive{
-    display: grid; 
-    grid-template-columns: repeat(3, 1fr); 
+    display: grid;
     gap: 1rem; 
     
 }

@@ -9,7 +9,7 @@ function toggleMenu() {
         const navLinks = document.querySelector('.nav');
         const hamburger = document.querySelector('.hamburger');
       
-        navLinks.classList.toggle('show'); // <-- Fix here
+        navLinks.classList.toggle('show');
         hamburger.classList.toggle('close');
 }
 function closeMenu() {
