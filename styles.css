@@ -140,7 +140,6 @@ margin-top: var(--flow-space, 2rem);
 
 
 .site-header{
-    box-shadow: 0px 4px 12px 0px hsl(var(--clr-gold), 0.08); 
     backdrop-filter: blur(50px);
     position: fixed;
     top: 0;
@@ -263,11 +262,12 @@ margin-top: var(--flow-space, 2rem);
     
 }
 .desktop-notice{
+    display: none;
    visibility: hidden;
     
 }
 .hero{
-    padding-block: 8rem;
+    padding-block: 10rem 6rem;
     text-align: center;
 }
 .hero-image{
@@ -350,23 +350,24 @@ margin-top: var(--flow-space, 2rem);
 
 }
 .project-image-container, .about-img, .more-designs{
-    height: 24rem;
+    height: 20rem;
     background-color: hsl(140, 36%, 95%);
-    border-radius: 2.5rem;
+    border-radius: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     margin-bottom: 1rem;
 }
-.more-designs{
-    height: auto;
-}
+
 .project-image-container img, .more-designs img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: block;
+}
+.more-designs{
+    height: auto;
 }
 
 .btn-cta{
@@ -409,7 +410,8 @@ margin-top: var(--flow-space, 2rem);
 
 .about-img{
     margin-top: 2.5rem;
-    height: 32rem; 
+    height: auto; 
+    border-radius: 3rem;
     
 }
 .about-img img{
