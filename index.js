@@ -67,3 +67,29 @@ document.addEventListener('DOMContentLoaded', function() {
       
         window.addEventListener('scroll', checkInView);
       });
+document.addEventListener('DOMContentLoaded', function() {
+  // Overlay open/close logic
+  const openBtn = document.getElementById('openCaseStudyBtn');
+  const overlay = document.getElementById('imageOverlay');
+  const closeBtn = document.getElementById('closeOverlay');
+
+  if (openBtn && overlay && closeBtn) {
+    openBtn.addEventListener('click', function() {
+      overlay.style.display = 'flex';
+      overlay.style.position = 'fixed';
+      overlay.style.top = '0';
+      overlay.style.left = '0';
+      overlay.style.width = '100vw';
+      overlay.style.height = '100vh';
+      overlay.style.background = 'rgba(20, 17, 26, 0.95)';
+      overlay.style.overflowY = 'auto';
+      overlay.style.zIndex = '1000';
+      document.body.style.overflow = 'hidden';
+    });
+
+    closeBtn.addEventListener('click', function() {
+      overlay.style.display = 'none';
+      document.body.style.overflow = '';
+    });
+  }
+});

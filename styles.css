@@ -478,6 +478,43 @@ margin-top: var(--flow-space, 2rem);
     transform: translateY(0);
   }
 
+/* case study styles */
+.image-overlay {
+  display: none;
+  flex-direction: column;
+  gap: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 2rem;
+  background: hsl(var(--clr-dark), 0.4);
+  /* justify-content: center; */
+  align-items: center;
+  z-index: 1000;
+  overflow-y: auto;
+  max-height: 100vh;
+}
+
+
+.close-btn{
+  position: fixed;
+  background-color: hsl(var(--clr-white), 0.4);
+  color: hsl(var(--clr-dark));
+  border: none;
+  padding: 0.75rem 1.05rem;
+  font-size: var(--fs-400);
+  cursor: pointer;
+  border-radius: 2rem;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1001;
+}
+
+
+
+
 @media (min-width:700px) {
     .site-header, .hero, .projects, .about{
         display: none;
