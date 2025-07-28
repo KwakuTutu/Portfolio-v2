@@ -377,6 +377,7 @@ margin-top: var(--flow-space, 2rem);
 }
 
 .btn-cta{
+    cursor: pointer;
     display: inline-block;
     align-self: flex-start;
     text-decoration: none;
@@ -611,7 +612,8 @@ margin-top: var(--flow-space, 2rem);
     padding-top: 6rem;
     }
     .footer-bluff{
-        bottom: -1.5rem;
+        font-size: var(--fs-750);
+        bottom: -2rem;
     }
     
 
@@ -638,6 +640,11 @@ margin-top: var(--flow-space, 2rem);
     .about-content--container{
         width: 85%;
         
+    }
+
+    .footer-bluff{
+        font-size: var(--fs-800);
+        bottom: -3rem;
     }
     
 
