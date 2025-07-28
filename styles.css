@@ -591,6 +591,23 @@ margin-top: var(--flow-space, 2rem);
         height: 20rem;
         /* margin-bottom: 1rem; */
     }
+    .about-content--wrapper--inner{
+    flex-direction: row;
+    gap: 2rem;
+    padding-block: 2rem;
+    }
+
+    .about-img{
+        margin-top: 0;
+        width: 50%;
+        border-radius: 4.5rem;
+        
+    }
+
+    .about-content--container{
+        width: 60%;
+        
+    }
     
 
     
@@ -609,6 +626,11 @@ margin-top: var(--flow-space, 2rem);
     .project-image-container{
         height: 22rem;
         /* margin-bottom: 1rem; */
+    }
+
+    .about-content--container{
+        width: 80%;
+        
     }
     
 
