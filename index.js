@@ -1,27 +1,27 @@
-const navToggle = document.querySelector('.nav-toggle');
-const nav = document.querySelector('.nav');
+// const navToggle = document.querySelector('.nav-toggle');
+// const nav = document.querySelector('.nav');
 
-navToggle.addEventListener('click', () => {
-    nav.classList.toggle('nav--visible');
-})
+// navToggle.addEventListener('click', () => {
+//     nav.classList.toggle('nav--visible');
+// })
 
-function toggleMenu() {
-    const navLinks = document.querySelector('.nav');
-    const hamburger = document.querySelector('.hamburger');
+// function toggleMenu() {
+//     const navLinks = document.querySelector('.nav');
+//     const hamburger = document.querySelector('.hamburger');
 
-    navLinks.classList.toggle('show');
-    hamburger.classList.toggle('close');
-}
+//     navLinks.classList.toggle('show');
+//     hamburger.classList.toggle('close');
+// }
 
-function closeMenu() {
-    const navVisible = document.querySelector('.nav--visible');
-    const navLinks = document.querySelector('.links');
-    const hamburger = document.querySelector('.hamburger');
+// function closeMenu() {
+//     const navVisible = document.querySelector('.nav--visible');
+//     const navLinks = document.querySelector('.links');
+//     const hamburger = document.querySelector('.hamburger');
 
-    navLinks.classList.remove('show');
-    hamburger.classList.remove('close');
-    navVisible.classList.remove('nav--visible');
-}
+//     navLinks.classList.remove('show');
+//     hamburger.classList.remove('close');
+//     navVisible.classList.remove('nav--visible');
+// }
 
 
 document.addEventListener('DOMContentLoaded', function() {
