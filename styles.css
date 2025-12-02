@@ -16,7 +16,7 @@
     --fs-300: 1rem;
     --fs-200: 0.875rem;
     /* font-families */
-    --ff-serif-text: 'Poppins', sans-serif;
+    --ff-serif-text: 'Inter', sans-serif;
     --ff-serif-heading: 'Bebas Neue', sans-serif;
 }
 
@@ -93,7 +93,7 @@ picture {
 .container {
     padding-inline: 1rem;
     margin: auto;
-    max-width: 80rem;
+    max-width: 65rem;
     position: relative;
 }
 
@@ -188,16 +188,28 @@ picture {
 }
 
 header {
+    display: flex;
+    justify-content: flex-end;
     padding: 0.5rem 1rem;
     position: fixed;
     width: 100%;
     z-index: 1;
+}
+
+nav {
+    background-color: hsl(var(--clr-blue), 0.5);
+    backdrop-filter: blur(99px);
+    position: relative;
+    width: 80%;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
+    padding: 0.5rem 2rem;
+    border-radius: 4rem;
 }
 
 .logo img {
-    height: 48px;
+    height: 40px;
 }
 
 .nav ul {
@@ -210,7 +222,7 @@ header {
 .nav ul li {
     cursor: pointer;
     list-style: none;
-    font-weight: 500;
+    font-size: var(--fs-200);
     text-align: left;
 }
 
@@ -218,7 +230,6 @@ header {
     display: inline-block;
     text-decoration: none;
     color: hsl(var(--clr-white));
-    font-size: var(--fs-300);
     transition: transform 0.3s ease;
 }
 
@@ -230,22 +241,6 @@ header {
 .cta:hover {
     transform: scale(1.1);
     background-color: hsl(var(--clr-purple));
-}
-
-.nav--visible {
-    background-color: hsl(var(--clr-dark), 0.99);
-    backdrop-filter: blur(93px);
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    visibility: visible;
-    position: absolute;
-    right: 0;
-    top: 72px;
-    left: 0;
-    bottom: 0;
 }
 
 .desktop-notice {
@@ -272,7 +267,7 @@ header {
 
 .hero-text p {
     font-weight: 400;
-    color: hsl(var(--clr-white), 0.6);
+    color: hsl(var(--clr-white));
 }
 
 .hero-text-text {
@@ -290,8 +285,8 @@ header {
 }
 
 .available-circle {
-    width: 16px;
-    height: 16px;
+    width: 12px;
+    height: 12px;
     background-color: #27ae60;
     border-radius: 50%;
     display: inline-block;
@@ -322,6 +317,10 @@ header {
     transition: transform 0.5s ease;
 }
 
+.social-icons--links img {
+    width: 22px;
+}
+
 .social-icons--links:hover {
     filter: brightness(0) saturate(100%) invert(75%) sepia(19%) saturate(749%) hue-rotate(221deg) brightness(102%) contrast(101%);
     transform: scale(1.2);
@@ -344,15 +343,22 @@ header {
 .project-case-study {
     flex-direction: column;
     --gap: 0.25rem;
-    padding-block: 2rem;
-    border-bottom: 1px solid hsl(var(--clr-white), 0.1);
+    padding: 0.8rem;
+    background-color: hsl(var(--clr-blue));
+    border: 1px solid hsl(var(--clr-purple), 0.3);
+    border-radius: 2rem;
 }
 
-.project-image-container,
+.project-image-container {
+    /* padding: 1rem; */
+    /* height: min-content; */
+    background-color: hsl(140, 36%, 95%);
+    border-radius: 1.5rem;
+}
+
 .about-img,
 .more-designs {
     height: auto;
-    background-color: hsl(140, 36%, 95%);
     border-radius: 2rem;
     display: flex;
     align-items: center;
@@ -375,22 +381,21 @@ header {
 }
 
 .btn-cta {
+    border: none;
     cursor: pointer;
     display: inline-block;
     align-self: flex-start;
     text-decoration: none;
-    background-color: hsl(var(--clr-white));
-    color: hsl(var(--clr-dark));
-    font-weight: 600;
+    background-color: hsl(var(--clr-purple));
+    color: hsl(var(--clr-blue));
+    font-weight: 500;
     padding: 0.8rem 1.25rem;
     border-radius: 2rem;
-    box-shadow: 1px 4px 12px 0px hsl(var(--clr-very-dark), 0.08);
     transition: transform 0.5s ease;
 }
 
 .btn-cta:hover {
-    transform: scale(1.1);
-    background-color: hsl(var(--clr-purple));
+    transform: scale(1.05);
 }
 
 .btn-cta--two {
@@ -541,25 +546,8 @@ header {
     .container {
         padding-inline: 2.5rem;
     }
-    .nav-biggerscreen {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
     .nav {
-        position: relative;
-        height: auto;
-    }
-    .nav ul {
-        display: flex;
-        justify-content: center;
-        margin-block: 0;
-        padding: 0;
-    }
-    .nav ul li {
-        align-self: center;
-        margin: 0.5rem 0 0.5rem 2.5rem;
-        padding-right: 0;
+        width: 50%;
     }
     .hero-heading-text,
     .footer-text h3 {
@@ -620,6 +608,9 @@ header {
 @media (min-width:1000px) {
     .container {
         padding-inline: 4rem;
+    }
+    .nav {
+        width: 40%;
     }
     .hero-heading-text,
     .footer-text h3 {
