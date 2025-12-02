@@ -188,8 +188,8 @@ picture {
 }
 
 header {
-    display: flex;
-    justify-content: flex-end;
+    /* display: flex; */
+    /* justify-content: flex-end; */
     padding: 0.5rem 1rem;
     position: fixed;
     width: 100%;
@@ -200,7 +200,7 @@ nav {
     background-color: hsl(var(--clr-blue), 0.5);
     backdrop-filter: blur(99px);
     position: relative;
-    width: 80%;
+    /* width: 80%; */
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
