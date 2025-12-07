@@ -200,7 +200,7 @@ nav {
     background-color: hsl(var(--clr-blue), 0.5);
     backdrop-filter: blur(99px);
     position: relative;
-    /* width: 80%; */
+    width: 90%;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
@@ -343,7 +343,7 @@ nav {
 .project-case-study {
     flex-direction: column;
     --gap: 0.25rem;
-    padding: 0.8rem;
+    padding: 1rem;
     background-color: hsl(var(--clr-blue));
     border: 1px solid hsl(var(--clr-purple), 0.3);
     border-radius: 2rem;
@@ -542,12 +542,12 @@ nav {
     z-index: 1001;
 }
 
-@media (min-width:760px) {
+@media (min-width:700px) {
     .container {
         padding-inline: 2.5rem;
     }
     .nav {
-        width: 50%;
+        width: 22.5rem;
     }
     .hero-heading-text,
     .footer-text h3 {
@@ -600,8 +600,8 @@ nav {
         padding-top: 6rem;
     }
     .footer-bluff {
-        font-size: var(--fs-750);
-        bottom: -2rem;
+        font-size: var(--fs-700);
+        bottom: -1.5rem;
     }
 }
 
@@ -609,9 +609,9 @@ nav {
     .container {
         padding-inline: 4rem;
     }
-    .nav {
+    /* .nav {
         width: 40%;
-    }
+    } */
     .hero-heading-text,
     .footer-text h3 {
         font-size: var(--fs-800);
@@ -627,7 +627,7 @@ nav {
         width: 85%;
     }
     .footer-bluff {
-        font-size: var(--fs-800);
-        bottom: -3rem;
+        font-size: var(--fs-750);
+        bottom: -2rem;
     }
 }
