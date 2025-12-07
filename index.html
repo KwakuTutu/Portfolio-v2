@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="icon" href="images/Logo.svg" type="image/x-icon">
     <meta name="description" content="Portfolio of Samuel Tutu Sasu-Yiadom, a Product Designer specializing in user experiences that resonate and make a difference.">
     <meta name="keywords" content="Samuel Tutu, Product Designer, UX Design, UI Design, Web Design, Portfolio">
@@ -23,9 +23,9 @@
 <script defer src="/_vercel/insights/script.js"></script>
 
 <body>
-    <header class="flex bg-dark">
-        <a href="#" class="logo"><img src="images/Logo.svg"></a>
-        <nav class="nav">
+    <header>
+        <nav class="nav flex">
+            <a href="#" class="logo"><img src="images/Logo.svg"></a>
             <ul class="flex">
                 <li><a class="nav-links" href="#projects">Projects</a></li>
                 <li><a class="nav-links" href="#about">About</a></li>
@@ -39,11 +39,7 @@
         <button class="close-btn" id="closeOverlay">✕</button>
         <img src="images/hero.png" alt="Selected" class="overlay-image" id="overlayImage">
         <img src="images/1.png" alt="Selected" class="overlay-image" id="overlayImage">
-        <!-- <img src="images/1.png" alt="Selected" class="overlay-image" id="overlayImage">
-    <img src="images/1.png" alt="Selected" class="overlay-image" id="overlayImage">
-    <img src="images/1.png" alt="Selected" class="overlay-image" id="overlayImage">
-    <img src="images/1.png" alt="Selected" class="overlay-image" id="overlayImage">
-    <img src="images/1.png" alt="Selected" class="overlay-image" id="overlayImage"> -->
+
     </div>
     <div class="image-overlay" id="imageOverlayTwo">
         <button class="close-btn" id="closeOverlayTwo">✕</button>
@@ -54,17 +50,17 @@
 
     </div>
     <section class="hero bg-very-dark">
-        <div class="container">
+        <div>
             <div class="hero-text flex">
 
                 <!-- <img src="images/hero-image.png" alt="Samuel Tutu" class="hero-image" /> -->
                 <h1 class="hero-heading-text ff-serif-heading fs-700 text-purple">Hi! 👋🏾 Samuel Tutu<br>Sasu-Yiadom here</h1>
-                <p class="hero-text-text">Product Designer molding simple, user experiences that truly resonate and make real difference.</p>
+                <p class="hero-text-text">Product Designer molding simple, user experiences that truly resonate<br> and make real difference.</p>
             </div>
             <div class="available-socials flex">
                 <div class="flex available">
                     <div class="available-circle"></div>
-                    <p class="available-text fs-400" style="font-weight: 400;">Available for work</p>
+                    <p class="fs-300" style="font-weight: 500; color:#53d589">Available for work</p>
                 </div>
                 <div class="social-icons flex">
                     <a class="social-icons--links" href="https://twitter.com/_kwakututu_" target="_blank"><img src="images/x.svg" alt="X icon"></a>
@@ -78,21 +74,21 @@
 
     <section id="projects" class="section-animate projects bg-dark">
         <div class="container flex section-content">
-            <h2 class="section-heading ff-serif-heading fs-600">Projects</h2>
+            <h2 class="section-heading ff-serif-heading fs-600">Featured Projects</h2>
             <div class="project-wrapper">
                 <div class="project-case-study flex">
                     <div class="project-image-container"><img src="images/case-study.png" alt="Project Image" class="project-img" /></div>
-                    <h3 class="ff-serif-heading fs-500 text-white">Therapy Management App - Theraman</h3>
-                    <p class="text-purple fs-400">Case Study (Coming soon)</p>
-                    <p style="margin-bottom: 0.75rem;">TheraMan is a simple mobile app that helps therapists organize and manage their work. It lets keep everything in one place, so you can focus more on helping people and less on admin tasks.</p>
-                    <button class="btn-cta fs-400" id="openCaseStudyBtn">Read project overview</button>
+                    <h3 class="ff-serif-heading fs-500 text-white">Theraman</h3>
+                    <p class="text-purple fs-300">Case Study</p>
+                    <p style="margin-bottom: 0.75rem;">TheraMan is a simple mobile app that helps therapists organize and manage their work.</p>
+                    <button class="btn-cta fs-200" id="openCaseStudyBtn">View case study</button>
                 </div>
                 <div class="project-case-study flex">
                     <div class="project-image-container"><img src="images/branding.png" alt="Project Image" class="project-img" /></div>
                     <h3 class="ff-serif-heading fs-500 text-white">Logofolio and Branding</h3>
                     <p class="text-purple fs-400">Branding Design</p>
                     <p style="margin-bottom: 0.75rem;">Curated logo design and design mockups</p>
-                    <button class="btn-cta fs-400" id="openDesignBtn">View design</button>
+                    <button class="btn-cta fs-200" id="openDesignBtn">View design</button>
                 </div>
                 <div class="project-case-study flex">
                     <div class="project-image-container" style="background-color: #f5f5db;"><img src="images/fb.png" alt="Project Image" class="project-img" /></div>
@@ -100,7 +96,7 @@
                     <p class="text-purple fs-400">Website Development</p>
                     <p style="margin-bottom: 0.75rem;">This is the website design for FunBite Restaurant developed in HTML/CSS/JS and mobile responsive</p>
                     <a href="https://vanfield-lab.github.io/" target="_blank" rel="noopener noreferrer">
-                        <button class="btn-cta btn-cta--two fs-400">Open website</button>
+                        <button class="btn-cta btn-cta--two fs-200">Open website</button>
                     </a>
                 </div>
                 <div class="project-case-study flex">
@@ -109,10 +105,10 @@
                     <p class="text-purple fs-400">Website Development</p>
                     <p style="margin-bottom: 0.75rem;">This is the website design for RIS developed in HTML/CSS/JS and mobile responsive</p>
                     <a href="https://kwakututu.github.io/RIS/" target="_blank" rel="noopener noreferrer">
-                        <button class="btn-cta btn-cta--two fs-400">Open website</button>
+                        <button class="btn-cta btn-cta--two fs-200">Open website</button>
                     </a>
                 </div>
-                <div class="project-case-study flex">
+                <!-- <div class="project-case-study flex">
                     <div class="project-image-container" style="background-color: #eff4f7;"><img src="images/sunny.png" alt="Project Image" class="project-img" /></div>
                     <h3 class="ff-serif-heading fs-500 text-white">Sunnyside Website</h3>
                     <p class="text-purple fs-400">Website Development</p>
@@ -120,7 +116,7 @@
                     <a href="https://sunnyside-lime-two.vercel.app/" target="_blank" rel="noopener noreferrer">
                         <button class="btn-cta btn-cta--two fs-400">Open website</button>
                     </a>
-                </div>
+                </div> -->
             </div>
             <div class="more-designs-section">
                 <h3 class="ff-serif-heading fs-500 text-white">More Designs</h3>
@@ -131,7 +127,7 @@
                     <div class="more-designs"><img src="images/cyprep-one.png" alt="Design sample"></div>
                     <div class="more-designs"><img src="images/cyprep-two.png" alt="Design sample"></div>
                 </div>
-                <button class="btn-cta btn-cta--two fs-400">View all</button>
+                <!-- <button class="btn-cta btn-cta--two fs-400">View all</button> -->
             </div>
         </div>
     </section>
@@ -163,8 +159,8 @@
                         </div>
                     </div>
                 </div>
-                <a class="btn-cta--two" href="https://drive.google.com/file/d/1ZnXP6oVbVUYkrOgE4rjvSwFPZICiHnP6/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                    <button class="btn-cta btn-cta--two fs-400">View my CV</button>
+                <a class="btn-cta--two" href="https://drive.google.com/file/d/1Bq7sX22Bj-A-y59pNg2ZeKypd3wIqUqw/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                    <button class="btn-cta btn-cta--two fs-200">View my CV</button>
                 </a>
             </div>
         </div>
@@ -175,7 +171,7 @@
             <div class=" flex footer-wrapper">
                 <div class="flex footer-text">
                     <h3 class="ff-serif-heading fs-700 text-purple">Have an idea?</h3>
-                    <h3 class="ff-serif-heading fs-700 text-white">Let's work together</h3>
+                    <h3 class="ff-serif-heading fs-600 text-white">Let's work together</h3>
                 </div>
                 <div class="available-socials flex">
                     <p class="available flex"><img src="images/Email icon.svg" alt="email"> tutuyiadom93@gmail.com</p>
@@ -187,7 +183,7 @@
                     </div>
                 </div>
                 <a class="btn-cta--two" href="mailto:tutuyiadom93@gmail.com" style="text-decoration: none;">
-                    <button class="btn-cta shoot-me fs-400">
+                    <button class="btn-cta shoot-me fs-200">
             Shoot me an email <img src="images/Email button icon.svg"/>
           </button>
                 </a>
